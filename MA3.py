@@ -27,6 +27,7 @@ def approximate_pi(n): # Ex1
     ns = [elem for elem in cords if elem[0]**2 + elem[1]**2 >= 1]
     nc = [elem for elem in cords if elem[0]**2 + elem[1]**2 < 1]
     pi = 4*(len(nc)/(len(nc)+len(ns)))
+    print(pi)
     return pi
 
 def sphere_volume(n, d): #Ex2, approximation
@@ -97,7 +98,7 @@ def main():
     print(r)
     stop = pc()
     print(f"Ex3: Sequential time of {d} and {n} with parallel calc: {stop-start}")
-    
+
     #Ex4
     n = 1000000
     d = 11
