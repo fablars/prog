@@ -94,8 +94,7 @@ def main():
     print("What is parallel time?")
 
     start = pc()
-    r = sphere_volume_parallel1(n, d)
-    print(r)
+    sphere_volume_parallel1(n, d)
     stop = pc()
     print(f"Ex3: Parallel time of {d} and {n}: {stop-start}")
 
