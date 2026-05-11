@@ -67,7 +67,7 @@ def sphere_volume_parallel2(n,d,np=10):
     return mean(results)
     
 def main():
-    """ #Ex1
+    #Ex1
     dots = [1000, 10000, 100000]
     for n in dots:
         approximate_pi(n)
@@ -97,7 +97,7 @@ def main():
     print(r)
     stop = pc()
     print(f"Ex3: Sequential time of {d} and {n} with parallel calc: {stop-start}")
- """
+    
     #Ex4
     n = 1000000
     d = 11
@@ -106,7 +106,10 @@ def main():
     stop = pc()
     print(f"Ex4: Sequential time of {d} and {n}: {stop-start}")
     print("What is parallel time?")
+    start = pc()
     sphere_volume_parallel2(n, d)
+    stop = pc()
+    print(f"Ex4: Sequential time of {d} and {n} with parallel calc: {stop-start}")
 
 if __name__ == '__main__':
 	main()
