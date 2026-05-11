@@ -97,7 +97,7 @@ def main():
     r = sphere_volume_parallel1(n, d)
     print(r)
     stop = pc()
-    print(f"Ex3: Sequential time of {d} and {n} with parallel calc: {stop-start}")
+    print(f"Ex3: Parallel time of {d} and {n}: {stop-start}")
 
     #Ex4
     n = 1000000
@@ -110,7 +110,7 @@ def main():
     start = pc()
     sphere_volume_parallel2(n, d)
     stop = pc()
-    print(f"Ex4: Sequential time of {d} and {n} with parallel calc: {stop-start}")
+    print(f"Ex4: Parallel time of {d} and {n}: {stop-start}")
 
 if __name__ == '__main__':
 	main()
